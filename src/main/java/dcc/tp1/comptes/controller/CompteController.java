@@ -33,7 +33,7 @@ import java.util.Optional;
         ),
 
         servers = @Server(
-                url = "http://localhost:8080/"
+                url = "http://localhost:8083/"
         )
 )
 
