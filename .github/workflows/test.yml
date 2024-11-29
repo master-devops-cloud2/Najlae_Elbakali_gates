@@ -35,9 +35,13 @@ jobs:
 
       # Step 4: Run Maven build and tests
       - name: Build and Test with Maven
-        run: mvn clean verify
+        run: mvn clean install -DskipTests=true
 
-      # Step 5: Upload test results (Optional)
+        #step 5: Execute the tests
+      - name: Run Tests
+        run: mvn test
+
+      # Step 6: Upload test results (Optional)
       - name: Upload Test Results
         if: always() # Runs this step even if previous steps fail
         uses: actions/upload-artifact@v3
