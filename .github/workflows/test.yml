@@ -38,7 +38,7 @@ jobs:
         run: mvn clean install -DskipTests=true
 
         #step 5: Execute the tests
-      - name: Run Tests
+      - name: Run execute Tests 
         run: mvn test
 
       # Step 6: Upload test results (Optional)
