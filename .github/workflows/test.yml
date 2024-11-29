@@ -27,6 +27,9 @@ jobs:
       
       - name: Build and Test
         run: mvn clean verify  
+        
+      - name: List target directory (pour verifier le surefire-reports)
+        run: ls -la target/
 
       
       - name: Upload Test Results
