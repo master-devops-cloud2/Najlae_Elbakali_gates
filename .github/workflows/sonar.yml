@@ -3,10 +3,10 @@ name: SonarQube Analysis
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - master
 
 jobs:
   sonar:
@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install dependencies (Maven example)
+      - name: Install dependencies 
         run: mvn install
 
       - name: Run SonarQube Scan
