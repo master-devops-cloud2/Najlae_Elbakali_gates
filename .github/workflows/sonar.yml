@@ -36,4 +36,4 @@ jobs:
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       - name: Upload Quality Gate Status (Optional)
-        run: echo "SonarQube Quality Gate Check Complete"
+        run: echo "SonarQube Quality Gate test Check Complete"
