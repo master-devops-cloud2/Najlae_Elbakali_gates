@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies 
         run: mvn install
 
-      - name: Run SonarQube Scan
+#test
+      - name: Run SonarQube Scan 
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
